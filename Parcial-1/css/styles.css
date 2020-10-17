@@ -1,0 +1,143 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse; /*Bordes que tiene la tabla se unan*/
+    text-align: center;
+    /*table-layout: fixed;*/
+}
+
+thead {
+    background-color: rgb(64, 197, 186);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+thead tr td{
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(228, 228, 228);
+}
+
+.tdDataTable{
+    padding: 9px;
+}
+
+.rowDataTable:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+#contentEdit{
+    width: 50%;
+    height: 450px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 5px;
+    padding: 20px;    
+    animation-name: abrir;
+    animation-duration: 0.5s;
+}
+
+@keyframes abrir {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+#cerrar{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 25px;
+    left: 25px;
+    background-color: rgb(214, 45, 45);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#eliminar{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+    bottom: 25px;
+    left: 25px;
+    background-color: rgb(185, 34, 34);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#eliminar:hover{
+    background-color: rgb(228, 55, 55);
+}
+
+#modificar{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+    bottom: 25px;
+    right: 25px;
+    background-color: rgb(46, 153, 46);
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#modificar:hover{
+    background-color: rgb(71, 204, 71);
+}
+
+input[type=text]{
+    width: 100%;
+    margin:10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+
+input[type=date]{
+    width: 100%;
+    margin:10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%;
+    margin:10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#datosEdit{
+    position: absolute;
+    top: 20%;
+}
+
+.error{
+    border: 2px solid rgb(207, 55, 55) !important; 
+}
+
+#tituloLista{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2rem;
+}

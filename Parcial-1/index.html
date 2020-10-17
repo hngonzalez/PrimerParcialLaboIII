@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <form>
+        <div id="tituloLista">
+            <label>Lista de Alumnos</label>
+        </div>
+        <div>
+            
+            <table class="tablaGral">
+                <thead>
+                    <tr id="trHeadDatos" class="trowheadDatos"></tr>
+                </thead>
+                <tbody id="tbodyDatos">
+                    
+                </tbody>
+            </table>
+
+            <div id="contentEdit" style="display:none;">
+                <input id="cerrar" type="button" value="X">
+                <div id="datosEdit">
+                    <input id="txtID" type="hidden">
+                    <label for="txtNombre">Nombre</label>
+                    <input id="txtNombre" type="text">
+                    <label for="selCuatrimestre">Cuatrimestre</label>
+                    <br>
+                    <select name="selCuatrimestre" id="selCuatrimestre" disabled>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <br>
+                    <label for="txtFecha">Fecha Final</label>
+                    <input id="txtFecha" type="date">
+                    <label for="txtFecha">Turno</label>
+                    <br>
+                    <input id="Mañana" name="turno" type="radio" value="Mañana"><label for="Mañana">Mañana</label>
+                    <br>
+                    <input id="Noche" name="turno" type="radio" value="Noche"><label for="Noche">Noche</label>
+                </div>
+                <input id="eliminar" type="button" value="Eliminar">
+                <input id="modificar" type="button" value="Modificar">
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
